@@ -8,12 +8,12 @@
 
 import UIKit
 
-public enum KDCircularProgressGlowMode {
+open enum KDCircularProgressGlowMode {
     case forward, reverse, constant, noGlow
 }
 
 @IBDesignable
-public class KDCircularProgress: UIView, CAAnimationDelegate {
+open class KDCircularProgress: UIView, CAAnimationDelegate {
     
     private enum Conversion {
         static func degreesToRadians (value:CGFloat) -> CGFloat {
